@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 // import pages here
 import initalStart from "./pages/InitalStart"
+import Airtable11 from "./pages/Airtable"
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-const pages = [initalStart];
+const pages = [initalStart, Airtable11];
 function App() {
 // create a component loading system
 const [page,setPage] = useState(-1);
