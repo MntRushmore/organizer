@@ -1,4 +1,4 @@
-export default function app({ nextPage, backPage,currentPage }) {
+export default function InitalStart({ nextPage, backPage,currentPage }) {
     return <div className="hero bg-base-200 min-h-screen">
     <div className="hero-content text-center">
     <div className="max-w-xl">
