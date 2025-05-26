@@ -19,8 +19,8 @@ Each ysws must have a decent amount of participents or whats the point in this f
 </ul>  
 </p>
 
-<h3>Get featured in #happeings</h3>
-<p>Once you have a description for your ysws you should dm someone on the @newspapers team to get your ysws up on happenings!</p>
+<h3>Get featured in #happenings</h3>
+<p>Once you have a description for your ysws you should dm someone on the @newspapers team to get your ysws up on #happenings!</p>
 <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/9fda627f4d9abdb43e24648d3eec1d2e8f048a66_image.png" />
     <button className="btn btn-primary" onClick={() => nextPage()}>Next</button>
     </div>
