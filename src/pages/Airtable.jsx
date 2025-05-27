@@ -1,14 +1,48 @@
-export default function Airtable({ nextPage, backPage,currentPage }) {
-    return <div className="hero bg-base-200 min-h-screen">
-    <div className="hero-content text-center">
-    <div className="max-w-xl">
-    <h1 className="text-5xl font-bold">1.1 Confirm the data</h1>
-    <p className="py-1">
-So you got your airtable shared with you? now time to check the tables. The tables must have some sort of table  for the ysws db added by your POC. Assuming your POC gave you creator perms on the airtable you are now able to create a table for where your fillout data will go!
-    </p>
-    <p> I would recommend putting every collumn on the ysws db in ur fillout form airtable as well as fields related to your ysws or stuff like slack ID's etc.</p>
-    <button className="btn btn-primary" onClick={() => nextPage()}>Next</button>
+import { useEffect } from 'react';
+
+export default function Airtable({ nextPage, backPage, currentPage }) {
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+  }, []);
+
+  return (
+    <div style={{ backgroundColor: '#ffffff', color: '#1f2d3d', padding: '2rem', minHeight: '100vh' }}>
+      <div style={{ animation: 'fadeIn 0.5s ease-in-out' }}>
+        <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
+          <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#ec3750' }}>1.1 Confirm the data</h1>
+          <p style={{ paddingTop: '1rem' }}>
+            So you got your Airtable shared with you? Now it's time to check the tables. The database should have a table for your YSWS, added by your POC.
+            If you have creator permissions, you can now create a table where Fillout data will go!
+          </p>
+          <p>
+            I recommend copying every column from the YSWS DB into your Fillout form Airtable,
+            and also adding any relevant fields like Slack IDs.
+          </p>
+          <button
+            className="btn"
+            style={{
+              backgroundColor: '#33d6a6',
+              color: '#1f2d3d',
+              padding: '0.75rem 1.5rem',
+              fontSize: '1rem',
+              marginTop: '2rem',
+              borderRadius: '6px',
+              border: 'none',
+              cursor: 'pointer'
+            }}
+            onClick={() => nextPage()}
+          >
+            Next
+          </button>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
+  );
 }
