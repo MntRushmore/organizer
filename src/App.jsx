@@ -34,8 +34,8 @@ useEffect(() => {
 }, [setQMP])
 console.log(page)
   if(page < 0) return (
-    <div className="min-h-screen" style={{ backgroundColor: hackClubColors.white, color: hackClubColors.black, padding: "2rem" }}>
-    <div className="hero min-h-screen" style={{ backgroundColor: hackClubColors.red, color: hackClubColors.white }}>
+    <div className="min-h-screen" style={{ backgroundColor: hackClubColors.white, color: hackClubColors.black }}>
+    <div className="hero min-h-screen" style={{ backgroundColor: hackClubColors.red, color: hackClubColors.white, padding: "2rem" }}>
     <div className="hero-content text-center">
     <div className="max-w-xl">
     <h1 className="text-5xl font-bold" style={{ color: hackClubColors.yellow }}>So You Wanna Run
