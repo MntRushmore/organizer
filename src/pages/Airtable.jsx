@@ -18,7 +18,7 @@ export default function Airtable({ nextPage, backPage, currentPage }) {
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
           <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#ec3750' }}>1.1 Confirm the data</h1>
           <p style={{ paddingTop: '1rem' }}>
-            So you got your Airtable shared with you? Now it's time to check the tables. The database should have a table for your YSWS, added by your POC.
+            So you got your Airtable shared with you? Now it's time to check the tables. The database should have a table for your YSWS (You Ship We Ship), added by your POC (Point of Contact - HQ Sponsor).
             If you have creator permissions, you can now create a table where Fillout data will go!
           </p>
           <p>
