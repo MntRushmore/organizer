@@ -44,8 +44,30 @@ console.log(page)
     You Ship, We Ship (YSWS) rewards hackers who ship awesome
     projects. As an organizer, you get to make that magic happen.
     </p>
-    <p  className="py-6">pst. if you dont know what this is, then js close the tab</p>
-    <button className="btn" style={{ backgroundColor: hackClubColors.green, color: hackClubColors.black }} onClick={() => setPage(0)}>Start the Guide</button>
+    <p className="py-6 text-3xl font-black uppercase tracking-widest" style={{
+      backgroundColor: hackClubColors.yellow,
+      color: hackClubColors.black,
+      padding: "0.75rem 1.5rem",
+      borderRadius: "0.5rem",
+      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+      display: "inline-block",
+      transform: "rotate(-2deg)"
+    }}>
+      🚨 CONFIDENTIAL 🚨
+    </p>
+    <div className="mt-8">
+      <button
+        className="btn text-xl font-semibold px-6 py-3 rounded-lg transition duration-300 hover:scale-105"
+        style={{
+          backgroundColor: hackClubColors.green,
+          color: hackClubColors.black,
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)"
+        }}
+        onClick={() => setPage(0)}
+      >
+        🚀 Start the Guide
+      </button>
+    </div>
     </div>
     </div>
     </div>
@@ -53,15 +75,15 @@ console.log(page)
   )
     if(!pages[page]) {
       return (
-      <div className="min-h-screen" style={{ backgroundColor: hackClubColors.white, color: hackClubColors.black, padding: "2rem" }}>
+      <div className="h-screen overflow-hidden" style={{ backgroundColor: hackClubColors.white, color: hackClubColors.black }}>
       <div className="hero min-h-screen" style={{ backgroundColor: hackClubColors.red, color: hackClubColors.white }}>
       <div className="hero-content text-center">
       <div className="max-w-xl">
-      <h1 className="text-5xl font-bold" style={{ color: hackClubColors.yellow }}>You're Done!</h1>
-      <p className="py-1">
-    You're done with the guide! Congrats!
+      <h1 className="text-6xl font-black mb-4" style={{ color: hackClubColors.yellow }}>🎉 You're Done!</h1>
+      <p className="text-xl py-2 max-w-md mx-auto">
+      Awesome work finishing the guide — you're officially ready to run an epic YSWS!
       </p>
-      <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginTop: "2rem" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem", marginTop: "3rem" }}>
         <button className="btn" style={{ backgroundColor: hackClubColors.orange, color: hackClubColors.white }} onClick={() => setPage(page - 1)}>Wait go back</button>
         <button className="btn" style={{ backgroundColor: hackClubColors.blue, color: hackClubColors.white }} onClick={() => setPage(-1)}>Back Home</button>
       </div>
