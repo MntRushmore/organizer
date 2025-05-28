@@ -31,6 +31,9 @@ export default function Advertise({ nextPage, backPage, currentPage }) {
             <li>If using Airtable automations: [name]-notis</li>
           </ul>
           <br />
+          <h3 style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Make an #announcements post</h3>
+          <p>Once you are approved by HQ, you can start crafting your #announcements post. It should have a short description, the basic rules, the website linked, and be fun and intriguing! <b>Do not make this post until your YSWS is completely ready for launch.</b></p>
+          <br />
           <h3 style={{ fontWeight: 'bold', fontSize: '1.25rem' }}>Get featured in #happenings</h3>
           <p>Once you have a YSWS description, DM someone on the <strong>@newspapers</strong> team to get it featured in #happenings!</p>
           <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/9fda627f4d9abdb43e24648d3eec1d2e8f048a66_image.png" alt="Happenings example" style={{ margin: '1rem auto' }} />
