@@ -16,12 +16,12 @@ export default function InitalStart({ nextPage, backPage, currentPage }) {
     <div style={{ backgroundColor: '#ffffff', color: '#1f2d3d', padding: '2rem', minHeight: '100vh' }}>
       <div style={{ animation: 'fadeIn 0.5s ease-in-out' }}>
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
-          <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#ec3750' }}>1. Create the Airtable base</h1>
+          <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: '#ec3750' }}>1. Create the Airtable Base</h1>
           <p style={{ paddingTop: '1rem' }}>
             To create the Airtable at the moment, you must fill out&nbsp;
             <a href="https://forms.hackclub.com/t/4SCbYrvsfgus" target="_blank" style={{ color: '#338eda', textDecoration: 'underline' }}>
               this form
-            </a> and then wait for the organizer to create the base for you.
+            </a> and then wait for the Academy Team to create the base for you.
           </p>
           <p>This form helps get what you need done ASAP. Once that’s complete, you can proceed on your own!</p>
           <br />
